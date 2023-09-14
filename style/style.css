@@ -18,11 +18,21 @@ body {
 a,
 ol,
 ul,
-li {
+li,
+h4,
+button {
     margin: 0;
     padding: 0;
     list-style: none;
+    font-family: 'PT Sans', sans-serif;
 }
+
+
+button {
+    color: #FFF;
+}
+
+
 
 
 a {
@@ -62,8 +72,8 @@ input {
 }
 
 .section {
-    margin-top: 150px;
-    margin-bottom: 150px;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 
 /*-------------------header----------------------*/
@@ -121,6 +131,7 @@ input {
     display: grid;
     padding: 120px 0px;
     grid-template-columns: repeat(12, 1fr);
+    align-items: center;
 }
 
 
@@ -190,4 +201,61 @@ input {
     font-size: 19px;
     font-weight: 700;
     line-height: 140%;
+}
+
+
+/*-------------------services----------------------*/
+
+.services__content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.services-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-right: 135px;
+}
+
+.services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.pdf-btn {
+    background-color: #5DB7DE;
+    border-radius: 10px;
+    padding: 8px 10px;
+    margin-left: 10px;
+    border: none;
+}
+
+.services-item {
+    display: flex;
+    align-items: center;
+    width: 250px;
+}
+
+.services-item a {
+    color: var(--purple, #3D348B);
+    text-decoration: underline dotted;
+    text-underline-offset: 5px;
+}
+
+.services-cards {
+    display: grid;
+    gap: 20px;
+    grid-column: 3/ 13;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.services-cards .card {
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: span 1;
+    width: 416px;
+    background-color: #3D348B;
 }
