@@ -4,3 +4,7 @@ var swiper = new Swiper(".News-swiper", {
     freeMode: true,
   });
 
+document.querySelector('.burger').addEventListener('click', function() {
+  this.classList.toggle('active');
+  document.querySelector('.nav-bar').classList.toggle('open');
+})

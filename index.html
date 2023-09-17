@@ -14,19 +14,54 @@
 </head>
 
 <body>
+    <div class="overlay">
+
+    </div>
     <header class="header">
         <div class="container">
             <div class="header__content">
                 <div class="logo">
-                    <img src="assets/icons/logo.svg" alt="">
+                    <a href="#"><img src="assets/icons/logo.svg" alt=""></a>
                 </div>
                 <nav class="nav-bar">
+                    <div class="mobile-flex-top">
+                        <div class="search-mobile">
+                            <img src="assets/icons/search.svg" alt="">
+                            <input type="text">
+                        </div>
+                        
+                        <div class="language-changer-mobile">
+                            <strong>RU</strong>
+                        </div>
+                    </div>
                     <ol>
                         <li><a href="#">Главная</a></li>
                         <li><a href="#">Услуги</a></li>
                         <li><a href="#">О компании</a></li>
                         <li><a href="#">Новости</a></li>
                     </ol>
+                    <div class="mobile-flex-bottom-contacts">
+                        <div class="footer-contacts-address">
+                            <img src="assets/icons/location.svg" alt="">
+                            <a href="#">
+                                <address>123456, г. Тавима, ул. Морская, д. 21</address>
+                            </a>
+                        </div>
+                        <div class="footer-contacts-tel-and-mail">
+                            <div class="footer-contacts-tel">
+                                <img src="assets/icons/phone.svg" alt="">
+                                <a href="tel: +7 (123) 456-67-89">
+                                    +7 (123) 456-67-89
+                                </a>
+                            </div>
+                            <div class="footer-contacts-mail">
+                                <img src="assets/icons/mail.svg" alt="">
+                                <a href="mailto: order@visma.ru">
+                                    order@visma.ru
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </nav>
                 <div class="search">
                     <img src="assets/icons/search.svg" alt="">
@@ -34,6 +69,9 @@
                 </div>
                 <div class="language-changer">
                     <strong>RU</strong>
+                </div>
+                <div class="burger">
+                    <span></span>
                 </div>
             </div>
         </div>
@@ -516,11 +554,12 @@
                         </li>
                     </ul>
                 </div>
-               </div>
+                <div class="footer-copyrights">
+                    <span>ВСЕ ПРАВА ЗАЩИЩЕНЫ АО VISMA</span>
+                </div>
+            </div>
         </div>
-        <div class="footer-copyrights">
-            <span>ВСЕ ПРАВА ЗАЩИЩЕНЫ АО VISMA</span>
-        </div>
+
     </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
